@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".RegisterScreenActivity"
+    tools:showIn="@layout/activity_register_screen">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/udacity2" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/label_register_title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/ed_text_extra_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+    <RelativeLayout
+        android:id="@+id/fieldLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_layout_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_person_24dp"
+            android:hint="@string/label_name"
+            android:inputType="text"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/userName"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/v1"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_mail_outline_24dp"
+            android:hint="@string/label_email_hint"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/userEmail"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/userMobile"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/v2"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_mobile_24dp"
+            android:hint="@string/label_mobile_hint"
+            android:inputType="number"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <View
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/userMobile"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/v3"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="@string/label_password_hint"
+            android:inputType="textWebPassword"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <View
+            android:id="@+id/v4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/userPassword"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/userReEnterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/v4"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="@string/label_re_password_hint"
+            android:inputType="textWebPassword"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_bg"
+        android:text="@string/label_sign_up"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/ed_text_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldLayout" />
+
+</android.support.constraint.ConstraintLayout>

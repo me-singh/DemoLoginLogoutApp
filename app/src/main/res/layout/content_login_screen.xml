@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".LoginScreenActivity"
+    tools:showIn="@layout/activity_login_screen">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/udacity2" />
+
+
+    <RelativeLayout
+        android:id="@+id/fieldLayout"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/rounded_layout_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/userMobile"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_mobile_24dp"
+            android:hint="@string/label_mobile_hint"
+            android:inputType="number"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/userMobile"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="@string/label_password_hint"
+            android:inputType="textWebPassword"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_bg"
+        android:text="@string/label_login"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/ed_text_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldLayout" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:text="@string/label_forgot_password"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/ed_text_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_go_to_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="@string/label_sign_up"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ed_text_large" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="15dp"
+            app:srcCompat="@drawable/ic_arrow_forward_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

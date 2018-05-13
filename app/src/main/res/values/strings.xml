@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DemoLoginLogoutApp</string>
+    <string name="title_activity_login_screen">LoginScreenActivity</string>
+    <string name="title_activity_register_screen">RegisterScreenActivity</string>
+    <string name="label_powered_by">Powered by</string>
+    <string name="label_mobile_hint">Mobile no.</string>
+    <string name="label_password_hint">Password</string>
+    <string name="label_re_password_hint">Verify password</string>
+    <string name="label_sign_up">Register</string>
+    <string name="label_email_hint">Email (optional)</string>
+    <string name="label_login">Secure login</string>
+    <string name="label_name">Name</string>
+    <string name="label_verify">PROCEED</string>
+    <string name="label_forgot_password">Forgot password?</string>
+    <string name="title_activity_forgot_password">Forgot Password Activity</string>
+    <string name="label_register_title">Join us &amp; be a part of\nUDACITY STUDENT COMMUNITY</string>
+    <string name="label_time_remaining">%1$s %2$s</string>
+    <string name="title_activity_home_screen">Home Screen Activity</string>
+    <string name="string_forget_password">RETRIEVE PASSWORD FROM THIS ACTIVITY</string>
+    <string name="label_log_out">LOG OUT</string>
+    <string name="label_welcome">WELCOME</string>
+</resources>
